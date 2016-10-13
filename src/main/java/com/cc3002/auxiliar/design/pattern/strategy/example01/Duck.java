@@ -18,4 +18,8 @@ public class Duck implements IDuck {
     return stream;
   }
 
+  public void display() {
+    stream.println(Config.DISPLAY_DUCK);
+  }
+
 }

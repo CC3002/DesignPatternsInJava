@@ -10,4 +10,6 @@ public interface IDuck {
 
   PrintStream getStream();
 
+  void display();
+
 }

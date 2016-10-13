@@ -48,4 +48,10 @@ public class DuckTest {
         outputStream.toString());
   }
 
+  @Test
+  public void testDisplay() {
+    duck.display();
+    assertEquals("Expects a specific output.", Config.DISPLAY_DUCK + System.lineSeparator(),
+        outputStream.toString());
+  }
 }
