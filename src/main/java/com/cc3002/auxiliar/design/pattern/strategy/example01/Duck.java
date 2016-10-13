@@ -22,4 +22,8 @@ public class Duck implements IDuck {
     stream.println(Config.DISPLAY_DUCK);
   }
 
+  public void quack() {
+    stream.println(Config.QUACK_DUCK);
+  }
+
 }

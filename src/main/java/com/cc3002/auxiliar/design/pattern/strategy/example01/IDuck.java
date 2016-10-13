@@ -12,4 +12,6 @@ public interface IDuck {
 
   void display();
 
+  void quack();
+
 }

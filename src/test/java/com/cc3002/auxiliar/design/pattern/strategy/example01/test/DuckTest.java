@@ -54,4 +54,11 @@ public class DuckTest {
     assertEquals("Expects a specific output.", Config.DISPLAY_DUCK + System.lineSeparator(),
         outputStream.toString());
   }
+
+  @Test
+  public void testQuack() {
+    duck.quack();
+    assertEquals("Expects a specific output.", Config.QUACK_DUCK + System.lineSeparator(),
+        outputStream.toString());
+  }
 }
