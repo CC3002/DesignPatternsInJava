@@ -88,6 +88,7 @@ public abstract class AbstractDuckTest {
 
       public void fly(final PrintStream stream) { /* empty */ }
     };
+    fly.fly(printStream); // to satisfy coverage report
     duck.setFlyBehavior(fly);
     assertEquals("Expects same fly behavior object.", fly, duck.getFlyBehavior());
   }
@@ -98,6 +99,7 @@ public abstract class AbstractDuckTest {
 
       public void quack(final PrintStream stream) { /* empty */ }
     };
+    quack.quack(printStream); // to satisfy coverage report
     duck.setQuackBehavior(quack);
     assertEquals("Expects same quack behavior object.", quack, duck.getQuackBehavior());
   }
