@@ -45,14 +45,14 @@ public abstract class AbstractDuckTest {
   @Test
   public void testSwim() {
     duck.swim();
-    assertEquals("Expects a specific output.", Config.ALL_DUCKS_FLOAT + System.lineSeparator(),
+    assertEquals("Expects a floating output.", Config.ALL_DUCKS_FLOAT + System.lineSeparator(),
         outputStream.toString());
   }
 
   @Test
   public void testDisplay() {
     duck.display();
-    assertEquals("Expects a specific output.", displayMessage() + System.lineSeparator(),
+    assertEquals("Expects a display output.", displayMessage() + System.lineSeparator(),
         outputStream.toString());
   }
 
@@ -61,14 +61,14 @@ public abstract class AbstractDuckTest {
   @Test
   public void testQuack() {
     duck.quack();
-    assertEquals("Expects a specific output.", Config.QUACK_DUCK + System.lineSeparator(),
+    assertEquals("Expects a quack output.", Config.QUACK_DUCK + System.lineSeparator(),
         outputStream.toString());
   }
 
   @Test
   public void testFly() {
     duck.fly();
-    assertEquals("Expects a specific output.", Config.FLYING_DUCK + System.lineSeparator(),
+    assertEquals("Expects a flying output.", Config.FLYING_DUCK + System.lineSeparator(),
         outputStream.toString());
   }
 }
