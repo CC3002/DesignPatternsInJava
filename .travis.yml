@@ -1,9 +1,12 @@
 language: java
-
 sudo: false
-
 jdk:
   - oraclejdk8
-  
+
+env:
+  global:
+    - secure: >-
+        pvdz3M81W1586YHw8LdIk2pYPYmLSkTi4njPvf3DVXwHtNJohKpEQ4Dievp1gHcTbQTohpoffU4OmJmZvqnynDqW2ywDDPZmaUD0/Pgg8LQMk2qxD97ItIMTyZ+MRBwzygtqPbvythAocFqMa4eXRbHmufs4aeId4PdIb259hiTRG9hUxxgtx+QaHDyOmSFq9Y7VMrYNUJOpyqf2rfZS+UpNqeVUKyAXxVf6Zpj6l91s9ykwrg6LdHCpFj/r4v8sFzhtmsOu8sp8CWOK9jEzhlZkR6k8vXEIy9ZKiuX4HslXRtwBl6Ndw/1QLEmuVdQGmefiwsS5jUCrYo2kZOcXYMsyCNuv7rKuCua+NBy8UF9luyKHl4cwCggGAMHGraUx+9G5iUYe6gbPM8waBWHD4yiyBFrSrsAbTH7EMnS+FdZxZkugzEBz0lxTRt36bdwc4U5ALAHzR6vdeqcGOx6TTbELf1g4hJH5mpnMljjtisvccFseUXNVIlHdFcmU34lM09Azk0xqGmib4R9k1C7X3sWWYUJ93S2EiPGY9S7MikCYamY7q5r5yocTweeGnx78ULl3dcJaGW3kRAaz3zA945MgwYGlMTKPNoGXL5Yw5ke4FYjsZTMTze7clLCaiyhQ7q2yrTE7+LdP7HL4ddypvZCpa4MsSQWfr/JmJ/sfpi4=
+
 after_success:
-  - mvn clean test jacoco:report coveralls:report
+  - 'mvn -DrepoToken=${repo_token} clean test jacoco:report coveralls:report'
