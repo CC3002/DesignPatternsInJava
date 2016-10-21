@@ -7,4 +7,4 @@ Teaching material for CC3002 seminars in DCC Universidad de Chile. Examples are 
 
 ## Details
 
-- [Observer Pattern](ObserverPattern.md)
+- [Observer Pattern](doc/ObserverPattern.md)
