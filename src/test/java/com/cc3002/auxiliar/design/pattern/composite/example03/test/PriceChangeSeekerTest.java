@@ -39,7 +39,7 @@ public class PriceChangeSeekerTest {
       }
     });
     item.setPrice(0.5);
-    assertEquals("Expects price change.", 1, results);
+    assertEquals("Expects price change notification.", 1, results);
   }
 
 }
