@@ -1,4 +1,4 @@
-package com.cc3002.auxiliar.design.pattern.composite.example03;
+package com.cc3002.auxiliar.design.pattern.composite.example04;
 
 import java.util.Observable;
 
