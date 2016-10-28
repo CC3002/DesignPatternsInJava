@@ -1,5 +1,7 @@
 # Observer Pattern
 
+- [Wikipedia: Observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)
+
 ## Introduction 
 
 Let's say that we have sensors that response us temperature, pressure, and humidity. We can communicate with the sensor using `IWeatherDataSetter` interface.
